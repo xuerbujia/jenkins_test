@@ -10,6 +10,7 @@ func main() {
 	r.GET("/", func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"hello": "world"})
 	})
+
 	r.Run(":8081")
 
 }
